@@ -1,7 +1,7 @@
 {
-  "name": "Face Replacer",
+  "name": "Face Swap",
   "manifest_version": 3,
-  "description": "The Face Replacer Chrome Extension allows users to replace faces in images on web pages with custom faces of their choice.",
+  "description": "The Face Swap Chrome Extension allows users to swap faces in images on web pages with custom faces of their choice.",
   "version": "1.0",
   "permissions": [
     "contextMenus"
