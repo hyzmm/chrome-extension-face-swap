@@ -2,18 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .card {
-    background-color: theme('colors.white');
-    border-radius: theme('borderRadius.lg');
-    box-shadow: theme('boxShadow.xl');
-  }
-}
-
 html, body {
   width: 100%;
   height: 100%;
 }
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

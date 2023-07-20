@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(async () => {
 });
 
 chrome.contextMenus.onClicked.addListener((item, tab) => {
-    debugger
     const url = new URL(item.srcUrl);
     chrome.tabs.create({ url: url.href, index: tab.index + 1 });
+    chrome.action.openPopup();
 });
