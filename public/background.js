@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(async () => {
-    console.log(chrome.contextMenus.create)
+    console.log("Face swap installed")
     chrome.contextMenus.create({
         id: "face-swap",
         title: "Face Swap", contexts: ["image"]
@@ -8,6 +8,7 @@ chrome.runtime.onInstalled.addListener(async () => {
 
 chrome.contextMenus.onClicked.addListener((item, tab) => {
     const url = new URL(item.srcUrl);
-    chrome.tabs.create({ url: url.href, index: tab.index + 1 });
-    chrome.action.openPopup();
+    chrome.action.setPopup({
+        popup: `index.html?target=${url.href}`
+    });
 });

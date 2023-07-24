@@ -1,4 +1,4 @@
 #root {
-    height: 100%;
+    @apply h-80;
     padding: 12px;
 }

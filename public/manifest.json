@@ -7,7 +7,7 @@
     "contextMenus"
   ],
   "action": {
-    "default_popup": "popup/index.html"
+    "default_popup": "index.html"
   },
   "background": {
     "service_worker": "background.js",
